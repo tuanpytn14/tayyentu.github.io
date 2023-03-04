@@ -1,0 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+.clear{
+    clear: both;
+}
+
+
+#header-main{
+    display: flex;
+    flex-direction: column;
+    /* position: sticky; */
+    z-index: 1;
+    width: 100%; 
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+/* HEADER_TOP */
+#header-top{
+    height: 38px;
+    background-color: #116489;    
+}
+
+#header-top .nav{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+
+}
+
+.item-nav{
+    line-height: 38px;
+    padding: 0 15px;
+    border-right: 1px solid #ccc;
+    font: 14px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav li:hover a{
+    opacity: 0.7;
+}
+
+/* HEADER BOTTOM */
+#header-bottom{
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#logo-main{
+    display: flex;
+}
+
+#logo-main .logo-img{
+    margin: auto;
+    padding: 0 15px;
+}
+
+#navigation .nav-bot{
+    display: flex;
+    list-style: none;
+    line-height: 80px;
+}
+
+.nav-bot .nav-bot-item{
+    padding: 0 17px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-bot li:hover a{
+    opacity: 0.7;
+}
+
+
+#mod .mod-list{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+#mod .mod-item{
+    line-height: 80px;
+    padding: 0 17px;
+    color: #000;
+    text-decoration: none;
+}
+
+#mod .tour{
+    background-color: rgb(192, 36, 37);
+    border-radius: 5px;
+    padding: 16px 30px;
+    color: #fff;
+    margin: 0 15px;
+}
+
+#mod .user-icon{
+    padding-right:4px ;
+}
+
+.mod-list li:hover a{
+    opacity: 0.7;
+}
+
+.mod-list .language{
+    border-left: 1px solid #ccc;
+    color: #000;
+    position: relative;
+}
+
+
+#mod .world-icon{
+   margin-right: 4px;
+}
+
+#slider{
+    height: 36vh;
+    width: 100%;
+    background-image: linear-gradient(0,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/TayYenTu/Assets/Slider1.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+#slider .text-main{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+}
+
+#slider .text-header{
+    color: #fff;
+    font-size: 50px;
+    line-height: 109px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+#slider .text-slogan{
+    color: #fff;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    /* margin-top: 44px; */
+    text-align: center
+}
+
+#list_check_in{
+    background-color: #e5e5e5;
+    
+}
+
+#list_block{
+    display: flex;
+    height: 400px;
+}
+
+.list_info{
+    width: 50%;
+    height: 400px;
+    background-color: #fff;
+    padding: 80px 61px 30px 61px;
+}
+
+
+#list_check_in .info-main{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#list_check_in .info-rattings{
+    margin-top: 20px;
+}
+
+#list_check_in .info-content{
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.list_info .more{
+    float: right;
+}
+
+.list_img{
+  width: 50%;
+}
+
+.img-block-1{
+    height: 100%;
+    background-image: url('/TayYenTu/Assets/vanhoanguoidao.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+}
+
+.img-block-2{
+    height: 100%;
+    background-image: url('/TayYenTu/Assets/tayyentu5.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+}
+
+.img-block-3{
+    height: 100%;
+    background-image: url('/TayYenTu/Assets/denthannong.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+}
+
+.img-block-4{
+    height: 100%;
+    background-image: url('/TayYenTu/Assets/amvai.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+}
+
+#test{
+    background-color: #e5e5e5;
+    /* padding: 100px 0; */
+   
+    
+}
+
+#test .block{
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+#test .text-main{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+#test .text-slogan{
+    text-align: center;
+}
+
+#test .block-main{
+    margin-top: 30px;
+}
+
+#test .item-blog-1{
+    width: 360px;
+    height: 443px;
+    background-image:linear-gradient(0,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url('/TayYenTu/Assets/1.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+#test .item-blog-2{
+    width: 360px;
+    height: 443px;
+    background-image:linear-gradient(0,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url('/TayYenTu/Assets/dttyt.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+#test .item-blog-3{
+    width: 360px;
+    height: 443px;
+    background-image:linear-gradient(0,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url('/TayYenTu/Assets/thumb_660_f5726250-b68e-47b5-97c5-544788f48b4c.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+.block-main .item-info{
+    bottom: 0%;
+    position: absolute;
+    padding: 30px 25px;
+    
+}
+
+.block-main .info-text{
+    color: #fff;
+    font-size: 22px;
+}
+
+.block-main .blog-content{
+    color: #fff;    
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.block-main .blog-more{
+    margin-top: 20px;
+    float: right;
+    color: #fff;
+}
+
+#blog_footer{
+    width: 100%;
+    margin-top: 100px;
+   
+
+   
+}
+
+#blog_footer .footer-img{
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+ .footer-img:hover{
+   opacity: 0.7;
+ }
+
+#end-img {
+    height: 52vh;
+    width: 100%;
+    background-image: linear-gradient(0,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/TayYenTu/Assets/tây-yên-tử-11.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    /* margin-top: 20px;     */
+
+ }
+
+#end-img .text-end-container-left{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    width: 455px;
+    padding-left: 60px;
+   
+}
+
+#end-img .info-end{
+    color: #fff;
+    font-size: 40px;
+    width: 600px;
+}
+
+#end-img .slogan-end{
+    color: #fff;
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.text-end-contact{
+    padding-top: 100px;
+    font-size: 40px;
+}
+
+.end-contact .text-sp{
+    color: #fff;
+    padding-top: 20px;
+   border-bottom: 1px solid #fff;
+}
+
+ .socials-list{
+    font-size: 24px;
+    padding: 20px;
+}
+
+.socials-list a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.copyright a:hover,
+ .socials-list a:hover{
+    color: rgba(0, 0, 0 , 0.3);
+}
+
+ .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0 , 0.6);
+}
+
+ .copyright a{
+    color: rgba(0, 0, 0 , 0.6);
+
+}
+
